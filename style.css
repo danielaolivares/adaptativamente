@@ -1,0 +1,62 @@
+body {
+  background-color: FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  text-align: center;
+  vertical-align: middle;
+  
+} 
+
+
+.items {
+  padding: 18px;
+  margin: 8px;
+  box-shadow:40px 0  #2aabe2 inset,
+  80px 0  #2e358f inset,
+  120px 0  #90288d inset,
+  160px 0  #ea0a8b inset,
+  200px 0  #ee4223 inset,
+  240px 0  #f5821f inset,
+  280px 0  #E6B820 inset,
+  320px 0  #7fb541 inset,
+  360px 0  #009849 inset,
+  1100px 0  #00a89c inset;  
+}
+input {
+  border-radius: 20%;
+}
+.button {
+  font: bold 18px monospace;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  border-radius: 4px;
+  transition: all 0.15s linear;
+}
+
+/* #button{
+  text-align: center;
+  
+  background: #EEEEEE;
+  padding: 15px 15px;
+  font-weight: 500;
+} */
+.button:hover {
+  cursor: pointer;
+  background: green;
+  color: #EEEEEE;
+}
+
+.modal {
+  position: fixed;
+}
