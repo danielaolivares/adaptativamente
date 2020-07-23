@@ -22,7 +22,7 @@ document.getElementById("openModal").style.display= "none";
     return false  
   } else {
     document.getElementById("openModal").style.display= "block";
-      document.getElementById("showName").innerHTML=`<p>Nombre : ${rescuedName} <br>
-      Apellido : ${rescuedLastName} <br> Email : ${rescuedEmail} <br> Teléfono : ${rescuedPhone}  <br> Descripción : ${rescuedDescription}</p>`
+      document.getElementById("showName").innerHTML=`<p> <div class="items">Nombre : ${rescuedName} </div><div class="items">
+      Apellido : ${rescuedLastName}</div><div class="items"> Email : ${rescuedEmail}</div> <div class="items">Teléfono : ${rescuedPhone}</div>  <div class="items"> Descripción : ${rescuedDescription}</div></p>`
   }
  }

@@ -10,10 +10,32 @@ body {
   text-align: center;
   vertical-align: middle;  
 } 
+header {
+  margin-top: -24vh;
+  margin-bottom: 22vh;
+  margin-left: -124vh;
+  padding: 0vh;
+}
 
+img{
+  width: 26vh;
+}
 .container-form {
   background: #a7eff2;
 }
+
+.labelName {
+  margin: inherit;
+}
+
+.labelEmail {
+  margin-left: 33px;
+}
+
+.labelDescription {
+  margin-left: -26px;
+}
+
 .items {
   padding: 18px;
   margin: 8px; 
@@ -126,4 +148,12 @@ body {
     left: 5%;
     margin-left: 0;
   }  
+  header {
+    margin-top: -12vh;
+    margin-bottom: 17vh;
+    margin-left: auto;
+  } 
+  img{
+    width: 28vh;
+  }
 }
