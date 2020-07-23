@@ -8,28 +8,17 @@ body {
   padding-top: 20%;
   padding-bottom: 20%;
   text-align: center;
-  vertical-align: middle;
-  
+  vertical-align: middle;  
 } 
 
-
+.container-form {
+  background: #a7eff2;
+}
 .items {
   padding: 18px;
-  margin: 8px;
-  box-shadow:40px 0  #2aabe2 inset,
-  80px 0  #2e358f inset,
-  120px 0  #90288d inset,
-  160px 0  #ea0a8b inset,
-  200px 0  #ee4223 inset,
-  240px 0  #f5821f inset,
-  280px 0  #E6B820 inset,
-  320px 0  #7fb541 inset,
-  360px 0  #009849 inset,
-  1100px 0  #00a89c inset;  
+  margin: 8px; 
 }
-input {
-  border-radius: 20%;
-}
+
 .button {
   font: bold 18px monospace;
   text-decoration: none;
@@ -53,10 +42,88 @@ input {
 } */
 .button:hover {
   cursor: pointer;
-  background: green;
+  background: #75bcbf;
   color: #EEEEEE;
 }
 
 .modal {
   position: fixed;
+  /* top: -100vh; */
+  left: 0;
+  z-index: 99999999;
+  background: rgba(0, 0, 0, 0, 0.75);
+  width: 100vh;
+  height: 100vh;
+  /* opacity: 0; */
+  transition: opacity 0.35s ease;
+}
+
+.modal .content-modal {
+  width: 100%;
+  max-width: 500px;
+  position: fixed;
+  left: 50%;
+  top: -100vh;
+  transition: top 0.3s ease;
+  margin-left: -250px;
+  background: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0, 0.1);
+  z-index: 9999999;
+}
+
+.modal h2 {
+  padding: 0.5em;
+  text-align: center;
+  color: #444444;
+  margin: 0;
+}
+
+.modal article {
+  height: 300px;
+  background: chartreuse;
+}
+
+.close-modal {
+  color: #e74c3c;
+  position: absolute;
+  top: 0.2em;
+  right: 0.375em;
+  margin: 0;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.modal a:hover {
+  color: #c0392b;
+}
+
+.modal:target {
+  background: #3333334f;
+  top: 0;
+  width: 100%;
+  position: absolute;
+}
+
+.modal .btn-close-modal {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999991;
+}
+
+.modal:target .content-modal {
+  top: 50px;
+  transition: top 0.35s ease;
+}
+
+@media (max-width: 450px) {
+  .modal .content-modal {
+    width: 90%;
+    max-width: none;
+    left: 5%;
+    margin-left: 0;
+  }  
 }
